@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js" defer></script>
+<html lang="pt-BR">
 
-    <title>Jogo do Mário</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="shortcut icon" href="./img/mario.gif" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="script.js" defer></script>
+
+  <title>Mário Jump</title>
 </head>
+
 <body>
-    <div class="game-board">
-        <img src="./images/mario.gif" class="mario" alt="">
-        <img src="./images/pipe.png" class="pipe" alt="">
-    </div>
+  <div class="game">
+    <img class="mario" src="img/mario.gif" alt="mario">
+    <img class="pipe" src="img/pipe.png" alt="cano">
+    <img class="clouds" src="img/clouds.png" alt="nuvem">
+    
+    <button class="start" onclick="startGame()">Iniciar</button>
+  </div>
+
+  <div class="game-over">
+    <h1>Game Over :(</h1>
+    <button onclick="restartGame()">Reiniciar</button>
+  </div>
 </body>
+
 </html>
